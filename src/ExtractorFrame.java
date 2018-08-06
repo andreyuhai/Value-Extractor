@@ -51,73 +51,73 @@ public class ExtractorFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        chosenFiles_TF = new javax.swing.JTextField();
-        gozat_JB = new javax.swing.JButton();
-        degerleriAl_JB = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        dosyaMenu = new javax.swing.JMenu();
-        cikis_MI = new javax.swing.JMenuItem();
-        yardimMenu = new javax.swing.JMenu();
-        nasilKullanilir_MI = new javax.swing.JMenuItem();
-        hakkinda_MI = new javax.swing.JMenuItem();
+        selectedFiles_Label = new javax.swing.JLabel();
+        selectedFiles_TF = new javax.swing.JTextField();
+        browse_Button = new javax.swing.JButton();
+        extract_Button = new javax.swing.JButton();
+        menuBar = new javax.swing.JMenuBar();
+        file_Menu = new javax.swing.JMenu();
+        exit_MenuItem = new javax.swing.JMenuItem();
+        help_Menu = new javax.swing.JMenu();
+        howToUse_MenuItem = new javax.swing.JMenuItem();
+        about_MenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Value Extractor v0.0.1");
         setIconImage(getIconImage());
         setResizable(false);
 
-        jLabel1.setText("Seçilen Dosyalar :");
+        selectedFiles_Label.setText("Files Selected :");
 
-        gozat_JB.setText("Gözat");
-        gozat_JB.addActionListener(new java.awt.event.ActionListener() {
+        browse_Button.setText("Browse");
+        browse_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                gozat_JBActionPerformed(evt);
+                browse_ButtonActionPerformed(evt);
             }
         });
 
-        degerleriAl_JB.setText("Değerleri Al");
-        degerleriAl_JB.addActionListener(new java.awt.event.ActionListener() {
+        extract_Button.setText("Extract");
+        extract_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                degerleriAl_JBActionPerformed(evt);
+                extract_ButtonActionPerformed(evt);
             }
         });
 
-        dosyaMenu.setText("Dosya");
-        dosyaMenu.setToolTipText("");
+        file_Menu.setText("File");
+        file_Menu.setToolTipText("");
 
-        cikis_MI.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
-        cikis_MI.setText("Çıkış");
-        cikis_MI.addActionListener(new java.awt.event.ActionListener() {
+        exit_MenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
+        exit_MenuItem.setText("Exit");
+        exit_MenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cikis_MIActionPerformed(evt);
+                exit_MenuItemActionPerformed(evt);
             }
         });
-        dosyaMenu.add(cikis_MI);
+        file_Menu.add(exit_MenuItem);
 
-        jMenuBar1.add(dosyaMenu);
+        menuBar.add(file_Menu);
 
-        yardimMenu.setText("Yardım");
+        help_Menu.setText("Help");
 
-        nasilKullanilir_MI.setText("Nasıl kullanılır?");
-        nasilKullanilir_MI.addActionListener(new java.awt.event.ActionListener() {
+        howToUse_MenuItem.setText("How to use?");
+        howToUse_MenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nasilKullanilir_MIActionPerformed(evt);
+                howToUse_MenuItemActionPerformed(evt);
             }
         });
-        yardimMenu.add(nasilKullanilir_MI);
+        help_Menu.add(howToUse_MenuItem);
 
-        hakkinda_MI.setText("Hakkında");
-        hakkinda_MI.addActionListener(new java.awt.event.ActionListener() {
+        about_MenuItem.setText("About");
+        about_MenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hakkinda_MIActionPerformed(evt);
+                about_MenuItemActionPerformed(evt);
             }
         });
-        yardimMenu.add(hakkinda_MI);
+        help_Menu.add(about_MenuItem);
 
-        jMenuBar1.add(yardimMenu);
+        menuBar.add(help_Menu);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -126,13 +126,13 @@ public class ExtractorFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(degerleriAl_JB)
+                    .addComponent(extract_Button)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(selectedFiles_Label)
                         .addGap(12, 12, 12)
-                        .addComponent(chosenFiles_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(selectedFiles_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(gozat_JB)))
+                        .addComponent(browse_Button)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -140,18 +140,18 @@ public class ExtractorFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(gozat_JB, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(chosenFiles_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                    .addComponent(browse_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selectedFiles_TF, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(selectedFiles_Label))
                 .addGap(18, 18, 18)
-                .addComponent(degerleriAl_JB)
+                .addComponent(extract_Button)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void gozat_JBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gozat_JBActionPerformed
+    private void browse_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browse_ButtonActionPerformed
         // TODO add your handling code here:
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setMultiSelectionEnabled(true);
@@ -166,43 +166,43 @@ public class ExtractorFrame extends javax.swing.JFrame {
             for(int i = 0; i < selectedFiles.length; i++) {
                 selectedFileNames += selectedFiles[i].getName() + " ";
             }
-            chosenFiles_TF.setText(selectedFileNames);
+            selectedFiles_TF.setText(selectedFileNames);
         }
-    }//GEN-LAST:event_gozat_JBActionPerformed
+    }//GEN-LAST:event_browse_ButtonActionPerformed
 
-    private void nasilKullanilir_MIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nasilKullanilir_MIActionPerformed
+    private void howToUse_MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_howToUse_MenuItemActionPerformed
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "1. Gözat'a basarak istediğin dosyaları seç.\n"
-                + "2. Değerleri Al'a basarak değerleri ayrı bir excel dosyasına yazdır.\n"
-                + "\nHer bir dosya için ayrı bir excel dosyası oluşturulur.\n"
-                + "Not: Spesifik text dosyaları üzerinde çalışır.","Nasıl kullanılır?",JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_nasilKullanilir_MIActionPerformed
+        JOptionPane.showMessageDialog(this, "1. Browse and select the file(s) from which the values to be extracted.\n"
+                + "2. Then extract the values.\n"
+                + "\nAn excel file with the values will be created for each selected text file.\n"
+                + "Note: This application works only on specifically formatted text files.","How to use?",JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_howToUse_MenuItemActionPerformed
 
-    private void hakkinda_MIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hakkinda_MIActionPerformed
+    private void about_MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_about_MenuItemActionPerformed
         // TODO add your handling code here:
         openWebpage("http://blog.andreyuhai.com");
-    }//GEN-LAST:event_hakkinda_MIActionPerformed
+    }//GEN-LAST:event_about_MenuItemActionPerformed
 
-    private void cikis_MIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cikis_MIActionPerformed
+    private void exit_MenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exit_MenuItemActionPerformed
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_cikis_MIActionPerformed
+    }//GEN-LAST:event_exit_MenuItemActionPerformed
 
-    private void degerleriAl_JBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_degerleriAl_JBActionPerformed
+    private void extract_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_extract_ButtonActionPerformed
         // TODO add your handling code here:
         try{
             for(int i = 0; i < selectedFiles.length; i++) {
                 ArrayList valuesList = readFileAsList(selectedFiles[i]);
                 write_toExcel(valuesList, selectedFiles[i]);
             }
-            JOptionPane.showMessageDialog(this,Integer.toString(selectedFiles.length)
-                    +" dosya başarı ile aynı dizine yazıldı.", "Tamamlandı",JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this,"Successfully extracted values from "
+                    +Integer.toString(selectedFiles.length) + " file(s).", "Extraction Succesful",JOptionPane.INFORMATION_MESSAGE);
             selectedFiles = null;
-            chosenFiles_TF.setText("");
+            selectedFiles_TF.setText("");
         }catch(NullPointerException e) {
-            JOptionPane.showMessageDialog(this,"Herhangi bir dosya seçmediniz!", "Hata!",JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this,"You didn't choose any file!", "Warning!",JOptionPane.WARNING_MESSAGE);
         }
-    }//GEN-LAST:event_degerleriAl_JBActionPerformed
+    }//GEN-LAST:event_extract_ButtonActionPerformed
 
     public static void openWebpage(String urlString) {
         try {
@@ -215,7 +215,6 @@ public class ExtractorFrame extends javax.swing.JFrame {
     private ArrayList readFileAsList(File file) {
         boolean containsValue = false;
         BufferedReader reader = null;
-        int lineCount = 0;
         ArrayList<String> valuesList = new ArrayList<String>();
         
         try {
@@ -225,10 +224,9 @@ public class ExtractorFrame extends javax.swing.JFrame {
             
             
             while ((line = reader.readLine()) != null) {
-                lineCount++;
+               
                 if(line.toLowerCase().contains("value")) {
                     containsValue = true;
-                    System.out.println("Found it on line"+ Integer.toString(lineCount));
                     continue;
                 }
                 
@@ -286,15 +284,15 @@ public class ExtractorFrame extends javax.swing.JFrame {
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField chosenFiles_TF;
-    private javax.swing.JMenuItem cikis_MI;
-    private javax.swing.JButton degerleriAl_JB;
-    private javax.swing.JMenu dosyaMenu;
-    private javax.swing.JButton gozat_JB;
-    private javax.swing.JMenuItem hakkinda_MI;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem nasilKullanilir_MI;
-    private javax.swing.JMenu yardimMenu;
+    private javax.swing.JMenuItem about_MenuItem;
+    private javax.swing.JButton browse_Button;
+    private javax.swing.JMenuItem exit_MenuItem;
+    private javax.swing.JButton extract_Button;
+    private javax.swing.JMenu file_Menu;
+    private javax.swing.JMenu help_Menu;
+    private javax.swing.JMenuItem howToUse_MenuItem;
+    private javax.swing.JMenuBar menuBar;
+    private javax.swing.JLabel selectedFiles_Label;
+    private javax.swing.JTextField selectedFiles_TF;
     // End of variables declaration//GEN-END:variables
 }

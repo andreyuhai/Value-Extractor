@@ -2,46 +2,46 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+    <Menu class="javax.swing.JMenuBar" name="menuBar">
       <SubComponents>
-        <Menu class="javax.swing.JMenu" name="dosyaMenu">
+        <Menu class="javax.swing.JMenu" name="file_Menu">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Dosya"/>
+            <Property name="text" type="java.lang.String" value="File"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="cikis_MI">
+            <MenuItem class="javax.swing.JMenuItem" name="exit_MenuItem">
               <Properties>
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Alt+F4"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="&#xc7;&#x131;k&#x131;&#x15f;"/>
+                <Property name="text" type="java.lang.String" value="Exit"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cikis_MIActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exit_MenuItemActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="yardimMenu">
+        <Menu class="javax.swing.JMenu" name="help_Menu">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Yard&#x131;m"/>
+            <Property name="text" type="java.lang.String" value="Help"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="nasilKullanilir_MI">
+            <MenuItem class="javax.swing.JMenuItem" name="howToUse_MenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Nas&#x131;l kullan&#x131;l&#x131;r?"/>
+                <Property name="text" type="java.lang.String" value="How to use?"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nasilKullanilir_MIActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="howToUse_MenuItemActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="hakkinda_MI">
+            <MenuItem class="javax.swing.JMenuItem" name="about_MenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Hakk&#x131;nda"/>
+                <Property name="text" type="java.lang.String" value="About"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hakkinda_MIActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="about_MenuItemActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -58,7 +58,7 @@
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
-    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBar"/>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
   </SyntheticProperties>
@@ -80,13 +80,13 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
-                  <Component id="degerleriAl_JB" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="extract_Button" alignment="2" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="2" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="selectedFiles_Label" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="12" pref="12" max="12" attributes="0"/>
-                      <Component id="chosenFiles_TF" min="-2" pref="185" max="-2" attributes="0"/>
+                      <Component id="selectedFiles_TF" min="-2" pref="185" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="gozat_JB" min="-2" max="-2" attributes="0"/>
+                      <Component id="browse_Button" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -98,39 +98,39 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="2" attributes="0">
-                  <Component id="gozat_JB" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
-                  <Component id="chosenFiles_TF" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
-                  <Component id="jLabel1" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="browse_Button" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="selectedFiles_TF" alignment="2" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="selectedFiles_Label" alignment="2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="degerleriAl_JB" min="-2" max="-2" attributes="0"/>
+              <Component id="extract_Button" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="selectedFiles_Label">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Se&#xe7;ilen Dosyalar :"/>
+        <Property name="text" type="java.lang.String" value="Files Selected :"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="chosenFiles_TF">
+    <Component class="javax.swing.JTextField" name="selectedFiles_TF">
     </Component>
-    <Component class="javax.swing.JButton" name="gozat_JB">
+    <Component class="javax.swing.JButton" name="browse_Button">
       <Properties>
-        <Property name="text" type="java.lang.String" value="G&#xf6;zat"/>
+        <Property name="text" type="java.lang.String" value="Browse"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gozat_JBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="browse_ButtonActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="degerleriAl_JB">
+    <Component class="javax.swing.JButton" name="extract_Button">
       <Properties>
-        <Property name="text" type="java.lang.String" value="De&#x11f;erleri Al"/>
+        <Property name="text" type="java.lang.String" value="Extract"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="degerleriAl_JBActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="extract_ButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
