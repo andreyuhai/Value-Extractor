@@ -12,7 +12,7 @@ As you can see from the sample text file, it reads the file line by line until i
 
 After the line found, a flag called `containsValue` is set to `true` to initiate splitting the lines into an array by `;` (semicolons) which the text file has five of them per line after the line which has the word "value".
 
-```c
+```java
 valuesList.add(line.split(";")[3].trim());
 ```
 
