@@ -1,0 +1,48 @@
+PRO-Soft QA-90 Ver. 3.1.2
+QA-90 Serial no.     ;12430 04.05
+Operator             ;
+Establishment        ;ACIBADEM
+Date                 ;22.11.2017 02:25:03
+
+Equipment code       ;BED-003161
+Serial number        ;
+Status               ;
+Group                ;
+Manufacturer         ;
+Type                 ;
+Model                ;
+Location             ;
+Address 1            ;
+Address 2            ;
+
+Procedure            ;
+Checklist            ;
+Test sequence        ;Class 1 Genel EGT
+
+Testgroup;    Power Configuration;        Limit;        Value;        Status;       
+Supply Voltage;             N-G;           ;            102,8;        OK;           
+Supply Voltage;             L-G;           ;            113,6;        OK;           
+Supply Voltage;             L-N;           ;            232,2;        OK;           
+Current Consumption;        ;              ;            318,0;        OK;           
+Protective Earth;           ;             200,0;        107,0;        OK;           
+Insulation Resistance;      Mains - Case;  ;            > 999,0;      OK;           
+Earth Leakage Current;      OS;           1000,0;       47,0;         OK;           
+Earth Leakage Current;      NC;           500,0;        3,0;          OK;           
+Earth Leakage Current;      OS-RM;        1000,0;       47,0;         OK;           
+Earth Leakage Current;      NC-RM;        500,0;        4,0;          OK;           
+Enclosure Leakage Current;  OS;           500,0;        0,0;          OK;           
+Enclosure Leakage Current;  NC;           100,0;        0,0;          OK;           
+Enclosure Leakage Current;  OE;           500,0;        3,0;          OK;           
+Enclosure Leakage Current;  OS-RM;        500,0;        0,0;          OK;           
+Enclosure Leakage Current;  NC-RM;        100,0;        0,0;          OK;           
+Enclosure Leakage Current;  OE-RM;        500,0;        4,0;          OK;           
+
+*****   UNIT PASSED TEST!   *****
+
+Remark
+
+
+______________________________
+Signature
+********************************************************************************
+
