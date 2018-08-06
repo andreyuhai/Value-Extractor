@@ -35,7 +35,7 @@ Program keeps adding those values into an `ArrayList` called `valuesList` until 
 
 Finally we add this value into an `ArrayList` called `valuesList` as you can see above.
 
-#### Writing Extracted Values to an Excel File
+## Writing Extracted Values to an Excel File
 After adding values into an `ArrayList` we write the values to an excel file with the function below using [Apache POI Library][3].
 
 Generated `.xls` files will be in the same path as their sources.
