@@ -3,7 +3,7 @@ This is a Java application I've written for a friend who works at a hospital and
 
 What this application does is basically that to extract values under the "Value" column from a text file (which you can find a sample in [test][1] folder) which is created by [Metron QA-90][2] and write them to an excel (`.xls`) file.
 
-**This application works only with those specifically formatted text files. **
+**This application works only with those specifically formatted text files.**
 
 ## What's behind 
 As you can see from the sample text file, it reads the file line by line until it finds a line which contains the word "value". 
