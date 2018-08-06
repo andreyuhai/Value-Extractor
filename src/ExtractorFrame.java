@@ -9,26 +9,18 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.FileAlreadyExistsException;
 import java.util.ArrayList;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.UIManager;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author burak
+ * @author Andre Yuhai
  */
 public class ExtractorFrame extends javax.swing.JFrame {
 
@@ -157,7 +149,7 @@ public class ExtractorFrame extends javax.swing.JFrame {
         fileChooser.setMultiSelectionEnabled(true);
         fileChooser.setAcceptAllFileFilterUsed(false);
         
-        fileChooser.setFileFilter(new FileNameExtensionFilter("Text Dosyasi (.txt)", "txt"));
+        fileChooser.setFileFilter(new FileNameExtensionFilter("Text Files (.txt)", "txt"));
         
         int result = fileChooser.showOpenDialog(this);
         if(result == JFileChooser.APPROVE_OPTION) {
@@ -228,8 +220,7 @@ public class ExtractorFrame extends javax.swing.JFrame {
                 if(line.toLowerCase().contains("value")) {
                     containsValue = true;
                     continue;
-                }
-                
+                }      
                 
                 if(containsValue) {
                     if(line.isEmpty()) {
@@ -267,8 +258,6 @@ public class ExtractorFrame extends javax.swing.JFrame {
         try{
             workbook.write(new FileOutputStream(fileName.getCanonicalPath().replace(".txt", "-extracted.xls")));
             workbook.close();
-        }catch(FileAlreadyExistsException e) {
-            JOptionPane.showMessageDialog(this,"file already exists", "file",JOptionPane.INFORMATION_MESSAGE);
         }catch(IOException e){
             e.printStackTrace();
         }
@@ -276,11 +265,8 @@ public class ExtractorFrame extends javax.swing.JFrame {
     }
     
     public Image getIconImage() {
-//        ImageIcon icon = new ImageIcon("images/icon3.png");
-//        System.out.println(getClass().getClassLoader().getResource(".").toString());
         return Toolkit.getDefaultToolkit().getImage(getClass().getResource("images/icon3.png"));
     }
-    
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
