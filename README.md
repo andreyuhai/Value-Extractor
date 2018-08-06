@@ -1,7 +1,7 @@
 ## Value Extractor
 ![preview](/images/preview.png)
 
-This is a Java application I've written for a friend who works at a hospital and calibrates and tests devices.
+This is a very simple Java application I've written for a friend who works at a hospital and calibrates and tests devices.
 
 What this application does is basically that to extract values under the "Value" column from a text file (you can find a sample in [test][1] folder) which is created by [Metron QA-90][2] and write them to an excel (`.xls`) file.
 
